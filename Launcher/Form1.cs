@@ -27,7 +27,18 @@ namespace Launcher {
         }
 
         private void btnStart_Click(object sender, EventArgs e) {
-
+            // Create a process to run the chosen program and start it
+            Process pNewProcess = new Process();
+            // Tell the path for the program to execute
+            pNewProcess.StartInfo.FileName = txtProgram.Text;
+            pNewProcess.Start();
+            // Display process info in datagrid view
+            int iNewRow = dgvProcesses.Rows.Add();
+            DataGridViewRow dgvrNewRow = dgvProcesses.Rows[iNewRow];
+            dgvrNewRow.Cells["ColFileName"].Value = Path.GetFileName(txtProgram.Text);
+            dgvrNewRow.Cells["ColProcessID"].Value = pNewProcess.Id;
+            dgvrNewRow.Cells["ColCPUTime"].Value = pNewProcess.TotalProcessorTime;
+            dgvrNewRow.Cells["ColProcess"].Value = pNewProcess;
         }
 
         private void btnTerminate_Click(object sender, EventArgs e) {

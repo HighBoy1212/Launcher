@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gbxStart = new System.Windows.Forms.GroupBox();
             this.btnStart = new System.Windows.Forms.Button();
             this.btnBrowse = new System.Windows.Forms.Button();
@@ -139,8 +139,8 @@
             // ColProcessID
             // 
             this.ColProcessID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.ColProcessID.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.ColProcessID.DefaultCellStyle = dataGridViewCellStyle1;
             this.ColProcessID.HeaderText = "Process ID";
             this.ColProcessID.Name = "ColProcessID";
             this.ColProcessID.ReadOnly = true;
@@ -149,8 +149,8 @@
             // ColCPUTime
             // 
             this.ColCPUTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.ColCPUTime.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.ColCPUTime.DefaultCellStyle = dataGridViewCellStyle2;
             this.ColCPUTime.HeaderText = "CPU Time";
             this.ColCPUTime.Name = "ColCPUTime";
             this.ColCPUTime.ReadOnly = true;
@@ -172,6 +172,10 @@
             this.btnTerminate.Text = "Terminate";
             this.btnTerminate.UseVisualStyleBackColor = true;
             this.btnTerminate.Click += new System.EventHandler(this.btnTerminate_Click);
+            // 
+            // ofdProgram
+            // 
+            this.ofdProgram.Filter = "Executable Files|*.exe";
             // 
             // Form1
             // 
